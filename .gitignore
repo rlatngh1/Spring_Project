@@ -17,7 +17,6 @@ local.properties
 
 # ignore properties file
 config.properties
-porm.properties
 
 # External tool builders
 .externalToolBuilders/
