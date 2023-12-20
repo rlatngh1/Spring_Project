@@ -67,7 +67,7 @@ config.properties
 .project
 
 # JDT-specific (Eclipse Java Development Tools)
-.classpath
+.classpath	
 
 # Annotation Processing
 .apt_generated
@@ -121,6 +121,8 @@ dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
 .mvn/wrapper/maven-wrapper.jar
+pom.properties
+MANIFEST.MF
 
 ### Windows ###
 # Windows thumbnail cache files
