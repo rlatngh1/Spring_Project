@@ -1,0 +1,136 @@
+@CHARSET "UTF-8";
+
+.header {
+	background-color: #f0f1f2;
+}
+
+* {
+	padding: 0;
+	margin: 0
+}
+
+li {
+	list-style: none
+}
+
+a {
+	text-decoration: none;
+	font-size: 14px
+}
+
+.menu {
+	width: auto;
+	overflow: hidden;
+	margin: 0px auto;
+}
+
+.menu>li {
+	width: 20%; /*20*5=100%*/
+	float: left;
+	text-align: center;
+	line-height: 40px;
+	background-color: #f0f1f2;
+}
+
+.menu a {
+	color: #black;
+}
+
+.submenu>li {
+	background-color: #f0f1f2;
+	display: inline-block;
+	width: 100px;
+	border-radius: 30px;
+}
+
+.submenu {
+	position: absolute;
+	height: 0px;
+	overflow: hidden;
+	transition: height .2s;
+	-webkit-transition: height .2s;
+	-moz-transition: height .2s;
+	-o-transition: height .2s;
+	width: 574px;
+	border-radius: 30px;
+}
+
+.menu>li:hover {
+	background-color: lightgray;
+	transition-duration: 0.5s;
+	border-radius: 30px;
+}
+
+.menu>li:hover .submenu {
+	width: auto;
+	transition-duration: 1s;
+	height: auto;
+	background-color: lightgray;
+	border-radius: 30px;
+}
+
+.sidenav {
+	height: 100%;
+	width: 230px;
+	background-color: #f0f1f2;
+	position: fixed;
+	display: inline-block;
+	overflow-x: hidden;
+	left: 0;
+	padding-top: 18px;
+	border: 1px solid black;
+	/*     
+       */
+}
+
+.sidenav a {
+	display: flex;
+	text-decoration: none;
+	font-size: 14px;
+	color: black;
+	padding: 4px 6px 8px 15px;
+	/*     
+       */
+}
+
+.sidenav li {
+	display: block;
+	position: relative;
+	font-size: 15px;
+	margin-left: 20px;
+	margin-top: 20px;
+	height: auto;
+	margin-top: 10px;
+	/*     
+      font-family: "굴림";
+	      */
+}
+
+.sidesub {
+	overflow: hidden;
+	-webkit-transition: height .2s;
+	-moz-transition: height .2s;
+	-o-transition: height .2s;
+	display: black;
+	transition: height .2s;
+	background-color: white;
+	height: 0px;
+	width: 190px;
+	
+	
+	/*     
+	border-radius: 30px;
+	 */
+}
+
+.sidenav>li:hover .sidesub {
+	height: auto;
+	line-height: auto;
+	background-color: white;
+	transition-duration: 1s;
+	border-radius: 30px;
+	padding-bottom: 10px;
+	/*    
+      position: absolute;
+       */
+}
